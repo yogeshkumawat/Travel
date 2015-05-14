@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/travel_main_bg"
+    tools:context="com.example.travel.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:background="#33FAFAFA"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="cafe"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="restaurant"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="atm"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="bank"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="spa"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="school"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="dentist"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="doctor"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="zoo"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hair_care"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvText11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="police"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="movie_theater"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="library"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+
+            <TextView
+                android:id="@+id/tvText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hospital"
+                android:textSize="20dp"
+                android:textColor="#FAFAFA" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+                android:id="@+id/radiusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Radius is: 1000"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_margin="20dp"
+                android:textColor="#FAFAFA" />
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:max="15000"
+        android:progress="1000"
+        android:layout_below="@+id/linearLayout1"
+         />
+    <Button
+                android:id="@+id/showResultButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Results"
+                android:padding="10dp"
+                android:layout_below="@+id/seekBar1"
+                android:background="#660000"
+                android:layout_margin="80dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FAFAFA" />
+
+
+</RelativeLayout>
